@@ -1,0 +1,21 @@
+:root {
+
+    /* Generic colors */
+    --white: #FFFFFF;
+    --primary-color: #484141;
+    --secondary-color: #A5CDDF;
+    /* Text colors */
+ 
+    --milk-color: #A9A9A9;
+  
+    --faint-text-color: #48414199;
+    --red-text: #FF3333;
+
+    /* Container colors */
+    --main-container-color: #F2F0F1;
+    --card-container-color: #F0EEED;
+    --cta-container-1: #171717;
+ 
+
+}
+

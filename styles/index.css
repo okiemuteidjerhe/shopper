@@ -14,7 +14,313 @@
     --main-container-color: #F2F0F1;
     --card-container-color: #F0EEED;
     --cta-container-1: #171717;
- 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-color );
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400px;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+button>img, input>img, a>img {
+    width: 24px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a, button, input {
+    font-family: inherit;
+    color: inherit;
+}
+
+a {
+    font-weight: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+input {
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+}
+
+header, section, footer {
+    padding: 40px 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header > button {
+    display: none;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+footer {
+    display: grid;
+    gap: 50px;
+    background: linear-gradient(to bottom,
+    var(--white) 240px,
+    #F0F0F0 0
+    );
 
 }
 
+.cta {
+    background-color: var(--cta-container-1);
+    display: flex;
+    padding: 40px 60px;
+    border-radius: 8px;
+    gap: 150px;
+    height: 200px;
+}
+
+.cta h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.cta form {
+    display: grid;
+    gap: 14px;
+    height: fit-content;
+    min-width: 400px;
+    flex-grow: 1;
+}
+
+.input {
+    height: 50px;
+    display: flex;
+    padding: 14px 50px;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 8px;
+    gap: 12px;
+}
+
+.input > img {
+    width: 20px;
+}
+
+.main-footer {
+    display: grid;
+    gap: 50px;
+}
+
+.main-footer-up {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 100px;
+}
+
+.footer-logo {
+    display: grid;
+    height: fit-content;
+    gap: 25px;
+}
+
+.footer-logo .logo {
+    width: 200px;
+}
+
+.sm-icons {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.sm-icons a {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid #00000033;
+    display: grid;
+    place-content: center;
+    background-color: var(--white);
+}
+
+.sm-icons a:nth-child(2) {
+    background-color: var(--primary-color);
+}
+
+.footer-texts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-text {
+    display: grid;
+    height: fit-content;
+    gap: 25px;
+}
+
+.footer-text h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+
+.footer-text ul {
+    display: grid;
+    gap: 18px;
+}
+
+.footer-text ul li a {
+    color: #00000099;
+}
+
+.main-footer-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    border-top: 1px solid #0000001A;
+}
+
+.main-footer-down p {
+    font-size: 0.875rem;
+    color: #00000099;
+}
+
+.gateways {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.gateways a {
+    width: 50px;
+    height: 30px;
+    background-color: var(--white);
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 0.875rem;
+    }
+
+    header, section, footer {
+        padding: 50px 16px;
+    }
+
+    header {
+        gap: 16px;
+    }
+
+    header > button {
+        display: block;
+        background: none;
+        width: 24px;
+        height: 24px;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    footer {
+        gap: 70px;
+    }
+
+    .cta {
+        flex-direction: column;
+        height: fit-content;
+        gap: 30px;
+        padding: 30px 24px;
+    }
+
+    .cta h1 {
+        font-size: 2rem;
+    }
+
+    .cta form {
+        min-width: 100%;
+    }
+
+    .input {
+        padding-inline: 16px;
+    }
+
+    .main-footer {
+        gap: 40px;
+    }
+
+    .main-footer-up {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        gap: 18px;
+    }
+
+    .footer-logo .logo {
+        max-width: 150px;
+    }
+
+    .footer-texts {
+        gap: 24px;
+    }
+
+    .footer-text {
+        width: 40%;
+    }
+
+    .main-footer-down {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .gateways a {
+        width: 40px;
+    }
+}

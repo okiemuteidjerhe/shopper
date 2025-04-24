@@ -1,0 +1,164 @@
+.hero, .products {
+    padding: 160px 100px 100px 100px !important;
+}
+
+.hero {
+    background-color: var(--main-container-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+}
+
+.hero-texts {
+    display: grid;
+    gap: 24px;
+}
+
+.hero-texts h1 {
+    font-size: 4rem;
+}
+
+.hero-texts h1 span {
+    color: var(--milk-color);
+}
+
+.hero-texts p {
+    color: #00000099;
+}
+
+.hero-texts button {
+    width: 200px;
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.products {
+    display: grid;
+    gap: 40px;
+}
+
+.products h1 {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    display: grid;
+    gap: 20px;
+    width: 300px;
+}
+
+.product-img {
+    display: grid;
+    place-content: center;
+    position: relative;
+    background-color: var(--card-container-color);
+    height: 300px;
+    border-radius: 8px;
+}
+
+.product-img button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: var(--white);
+    display: grid;
+    place-content: center;
+    border: 1px solid #4841414D;
+}
+
+.product-texts {
+    display: grid;
+    gap: 10px;
+}
+
+.product-texts h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.product-texts h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.products > a {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary-color);
+    font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 75px 0!important;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-texts {
+        padding-inline: 16px;
+        text-align: center;
+    }
+
+    .hero-texts h1 {
+        font-size: 2.25rem;
+        padding-inline: 20px;
+    }
+
+    .hero-texts button {
+        width: auto;
+    }
+
+    .hero-img {
+        position: relative;
+    }
+
+    .products {
+        padding: 50px 36px !important;
+    }
+
+    .products h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .products-container {
+        justify-content: center;
+    }
+
+    .product-card {
+        margin: auto;
+    }
+
+    .product-texts h3 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .product-texts h2 {
+        font-size: 2rem;
+    }
+
+    .products > a {
+        justify-self: center;
+    }
+}

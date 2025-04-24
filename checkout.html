@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check out</title>
+</head>
+
+<body>
+    <header>
+        <button><img src="./icons/menu.png"></button>
+        <nav>
+            <div class="logo">
+                <img src="./icons/logo.png">
+            </div>
+            <ul class="main-menu ">
+                <li><a href="">Shop</a></li>
+                <li><a href="">On Sale</a></li>
+                <li><a href="">New Arrivals</a></li>
+            </ul>
+            <div class="cart-container">
+                <a href="cart.html"><img src="./icons/cart.png"></a>
+                <a href=""><img src="./icons/avatar.png"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mini-nav">
+            <a href="index.html">Home</a>
+            <img src="./icons/caret.png">
+            <a href="cart.html">Cart</a>
+            <img src="./icons/caret.png">
+            <a href="">Checkout</a>
+        </div>
+
+        <section>
+            <h1>Checkout</h1>
+            <form class="items-container">
+                <div class="billing-details">
+                    <h2>
+                        Billing Details
+                    </h2>
+                    <div class="fullname">
+                        <input type="text" name="firstName" id="" placeholder="First Name">
+                        <input type="text" name="lastName" id="" placeholder="Last Name">
+                    </div>
+                    <input type="text" name="companyName" id="" placeholder="Company Name">
+                    <input type="text" name="country" id="" placeholder="Country">
+                    <input type="text" name="streetAddress" id="" placeholder="Stress Address">
+                    <input type="text" name="postalCode" id="" placeholder="Post code/Zip">
+                    <input type="text" name="town" id="" placeholder="Town/City">
+                    <input type="text" name="phone" id="" placeholder="Phone">
+                    <input type="email" name="email" id="" placeholder="Email">
+                    <label><input type="checkbox" name="createAccount">Create an account?</label>
+                    <label><input type="checkbox" name="differentAddress">
+                        Ship to a different address</label>
+                    <input type="text" name="orderNotes" id="" placeholder="Order notes">
+                </div>
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="order-details">
+                        <div class="det">
+                            <p>Subtotal</p>
+                            <p id="subtotal">$565</p>
+                        </div>
+                        <div class="det">
+                            <p>Discount <span>(-20%)</span></p>
+                            <p id="discount">-$133</p>
+                        </div>
+                        <div class="det">
+                            <p>Delivery Fee</p>
+                            <p>$15</p>
+                        </div>
+                        <div class="det">
+                            <p>Total</p>
+                            <p id="total">$467</p>
+                        </div>
+                    </div>
+                   <div class="payment-options">
+                    <label><input type="radio" name="">Direct bank transfer</label>
+                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account</p>
+                    <label><input type="radio" name="">Check payments/label>
+                    <label><input type="radio" name="">Cash on delivery</label>
+                    <label><input type="radio" name="">PayPal <img src="./icons/paypal.png"></label>
+                   </div>                
+
+                    <button>Place Order <img src="./icons/white-arrow.png"></button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="cta">
+            <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+            <form>
+                <div class="input">
+                    <img src="./icons/envelop.png">
+                    <input type="email" placeholder="Enter your email address">
+                </div>
+                <button>Subscribe to Newsletter</button>
+            </form>
+        </div>
+        <div class="main-footer">
+            <div class="main-footer-up">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="./icons/logo.png">
+                    </div>
+                    <p>We have shoes that suits your style and which you’re proud to wear. From women to men.</p>
+                    <div class="sm-icons">
+                        <a href=""><img src="./icons/twitter-logo.png" alt="Twitter logo"></a>
+                        <a href=""><img src="./icons/facebook-logo.png" alt="Facebook logo"></a>
+                        <a href=""><img src="./icons/instagram-logo.png" alt="Instagram logo"></a>
+                        <a href=""><img src="./icons/github-logo.png" alt="Github logo"></a>
+                    </div>
+                </div>
+                <div class="footer-texts">
+                    <div class="footer-text">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Features</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-text">
+                        <h3>HELP</h3>
+                        <ul>
+                            <li><a href="">Customer Support</a></li>
+                            <li><a href="">Delivery Details</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-text">
+                        <h3>FAQ</h3>
+                        <ul>
+                            <li><a href="">Account</a></li>
+                            <li><a href="">Manage Deliveries</a></li>
+                            <li><a href="">Orders</a></li>
+                            <li><a href="">Payments</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-text">
+                        <h3>RESOURCES</h3>
+                        <ul>
+                            <li><a href="">Youtube Playlist</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer-down">
+                <p>Shopper © 2024, All Rights Reserved</p>
+                <div class="gateways">
+                    <a href=""><img src="./icons/Visa.png" alt=""></a>
+                    <a href=""><img src="./icons/Mastercard.png" alt=""></a>
+                    <a href=""><img src="./icons/Paypal.png" alt=""></a>
+                    <a href=""><img src="./icons/ Pay.png" alt=""></a>
+                    <a href=""><img src="./icons/G Pay.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

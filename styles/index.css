@@ -35,7 +35,7 @@ img {
 }
 
 button>img, input>img, a>img {
-    width: 24px;
+    max-width: 24px;
 }
 
 ul {

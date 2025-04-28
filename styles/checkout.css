@@ -68,7 +68,12 @@ section h1{
     color: #484141;
     opacity: 80%;
     padding: 12px 0;
-    border-bottom: 1px solid #4841411a ;
+    border-bottom: 1px solid #4841411a;
+    transition: color 0.2s ease;
+}
+.billing-details label:has(input:checked) .label-text{
+    color: var(--primary-color);
+    opacity: 1;
 }
 .order-summary{
     display: grid;

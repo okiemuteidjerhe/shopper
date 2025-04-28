@@ -75,6 +75,20 @@ section h1{
     color: var(--primary-color);
     opacity: 1;
 }
+.billing-details textarea{
+    border: none;
+    border-bottom: 1px solid #4841411a;
+    font-size: 1.25rem;
+    font-family: inherit;
+    padding: 12px 0;
+    min-height: 10px;
+    resize: none;
+    transition: min-height 0.3s ease;
+}
+.billing-details textarea:focus{
+    outline: none;
+    min-height:100px;
+}
 .order-summary{
     display: grid;
     padding: 20px 24px;

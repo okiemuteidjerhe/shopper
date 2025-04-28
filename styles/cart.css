@@ -1,0 +1,237 @@
+header{
+    border-bottom: 1px solid #4841411a;
+    margin: 0 100px;
+    padding: 50px 0 48px 0;
+}
+.mini-nav{
+    padding: 24px 100px;
+}
+.mini-nav > a {
+    color: var(--faint-text-color);
+}
+.mini-nav img{
+    width: 12px;
+    height: 12px;
+}
+.mini-nav :nth-child(3){
+    color: var(--primary-color);
+}
+section{
+    padding-top: 0px !important;
+}
+section h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+.items-container{
+    display: flex;
+    gap: 20px;
+}
+.items{
+    border: 1px solid #4841411a;
+    border-radius: 20px;
+    padding: 24px;
+    height: fit-content;
+    flex-grow: 1;
+}
+.item-card{
+    display: flex;
+    gap: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #4841411a;
+}
+.item-img{
+    width: 124px;
+    height: 124px;
+    background-color: var(--card-container-color);
+    display: grid;
+    place-content: flex-end;
+    border-radius: 9px;
+}
+.item-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-grow: 1;
+}
+.up{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;   
+}
+.down{display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.up-texts h2{
+    font-size: 1.25rem;
+}
+.up-texts p{
+    font-size: 0.875rem;
+}
+.up-texts p span{
+    color: var(--faint-text-color);
+}
+.up button{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    display: grid;
+    place-content: center;
+}
+.down p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.down .btns{
+    background-color: var(--card-container-color);
+    padding: 1px 20px;
+    width: 126px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 8px;
+}
+.down .btns span{
+    font-size: 0.875rem;
+}
+.down button{
+    background-color: transparent;
+    display: grid;
+    place-content: center;
+}
+.order-summary{
+    padding: 20px 24px;
+    border: 1px solid #4841411a;
+    border-radius: 20px;
+}
+.order-summary h2{
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+.order-details{
+    display: grid;
+    gap: 20px;
+}
+.order-details .det{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-details .det p{
+    font-size: 1rem;
+}
+.order-details .det p:nth-of-type(2){
+    font-weight: 700;
+}
+#discount{
+    color: red;
+}
+.order-details .det:nth-of-type(3)  {
+    padding-bottom: 20px;
+    border-bottom:1px solid #4841411a ;
+}
+.coupon{
+    display: flex;
+    gap: 12px;
+    margin: 24px 0;
+    height: 50px;
+}
+.coupon div{
+    display: flex;  
+    align-items: center;
+    background-color: var(--card-container-color);
+    border-radius: 8px;
+    gap: 12px;
+    padding: 12px 16px;
+    flex-grow: 1;
+}
+.coupon div img{
+    width: 24px;
+}
+.coupon div input{
+    background-color: var(--card-container-color);
+}
+.coupon button{
+    width: 119px;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.order-summary > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: inherit;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 12px;
+}
+.cta{
+    background-color: var(--secondary-color);
+}
+.cta form button{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+@media screen and (max-width:900px) {
+    header{
+        margin: 0 16px;
+        padding: 50px 0 30px 0;
+    }
+    .mini-nav{
+        padding: 16px 20px;
+    }
+    .mini-nav a{
+        font-size: 0.8rem;
+    }
+    .mini-nav img{
+        width: 10px;
+        height: 10px;
+    }
+    section h1{
+        font-size: 2rem;
+    }
+    .items-container{
+        flex-direction: column;
+    }
+    .item-img{
+        width: 99px;
+        height: 99px;
+    }
+    .item-texts{
+        gap: 16px;
+    }
+    .up-texts h2{
+        font-size: 1rem;
+    }
+    .up-texts p{
+        font-size: 0.75rem;
+    }
+    .down p{
+        font-size: 1.25rem;
+    }
+    .down button{
+        height: 30px;
+    }
+    .coupon div{
+        height: 40px;
+    }
+    .coupon div img{
+        width: 20px;
+    }
+    .coupon div input{
+        font-size: 0.8rem;
+    }
+    .coupon button{
+        height: 40px;
+        font-weight: 400;
+        font-size: 0.8rem;
+    }
+    .order-summary > a{
+        width: inherit;
+    }
+}

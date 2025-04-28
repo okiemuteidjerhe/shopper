@@ -1,0 +1,188 @@
+header{
+    border-bottom: 1px solid #4841411a;
+    margin: 0 100px;
+    padding: 50px 0 48px 0;
+}
+.mini-nav{
+    padding: 24px 100px;
+}
+.mini-nav > a {
+    color: var(--faint-text-color);
+}
+.mini-nav img{
+    width: 12px;
+    height: 12px;
+}
+.mini-nav :nth-child(5){
+    color: var(--primary-color);
+}
+section{
+    padding-top: 0px !important;
+}
+section h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+.items-container{
+    display: flex;
+    gap: 71px;
+}
+.items-container .line{
+    background-color: #4841411a;
+    height: 1px;
+    width: 85%;
+    margin: 0 auto;
+    display: none;
+}
+.billing-details{
+    flex-grow: 1;
+    display: grid;
+    gap: 16px;
+    padding: 24px;
+    border: 1px solid #4841411a;
+    border-radius: 20px;
+    height: fit-content;
+}
+.billing-details h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.fullname{
+    display: flex;
+    gap: 12px;
+}
+.billing-details input{
+    padding: 12px 0;
+    border-bottom: 1px solid #4841411a ;
+    font-size: 1.25rem;
+}
+.billing-details label{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.billing-details label .label-text{
+    flex-grow: 1;
+    font-size: 1.25rem;
+    color: #484141;
+    opacity: 80%;
+    padding: 12px 0;
+    border-bottom: 1px solid #4841411a ;
+}
+.order-summary{
+    display: grid;
+    padding: 20px 24px;
+    gap: 24px;
+    border: 1px solid #4841411a;
+    border-radius: 20px;   
+}
+.order-summary h2{
+    font-size: 1.5rem;
+    padding-bottom: 24px;
+    margin-bottom:px;
+    border-bottom: 1px solid #4841411a;
+}
+.order-details{
+    display: grid;
+    gap: 20px;
+}
+.order-details .det{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order-details .det p{
+    font-size: 1.25rem;
+}
+.order-details .det:not(:nth-of-type(7)) p:nth-of-type(1){
+    color: #484141;
+    opacity: 80%;
+}
+.order-details .det:not(:nth-of-type(6), :nth-of-type(1)) p:nth-of-type(2) {
+    font-weight: 700;
+}
+#discount{
+    color: red;
+}
+.order-details .det:nth-of-type(6)  {
+    padding-bottom: 20px;
+    border-bottom:1px solid #4841411a ;
+}
+.payment-options{
+    display: grid;
+    gap: 20px;
+}
+.payment-options label{
+    display: inline-flex;
+    gap: 10px;
+    font-size: 1.125rem;
+}
+.payment-options p{
+    text-align: justify;
+    color: #484141;
+    opacity: 80%;
+}
+.payment-options .label-content{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+.payment-options .label-content img{
+    height: 20px;
+    width: 20px;
+}
+.order-summary button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+@media screen and (max-width:600px) {
+    header{
+        margin: 0 16px;
+        padding: 50px 0 30px 0;
+    }
+    .mini-nav{
+        padding: 16px 20px;
+    }
+    .mini-nav a{
+        font-size: 0.8rem;
+    }
+    .mini-nav img{
+        width: 10px;
+        height: 10px;
+    }
+    section h1{
+        font-size: 2rem;
+    }
+    .items-container{
+        flex-direction: column;
+    }
+    .items-container .line{
+        display: block;
+    }
+    .fullname{
+        flex-direction: column;
+    }
+    .billing-details h2, .order-details h2{
+        font-size: 1.2rem;
+    }
+    .billing-details input, .billing-details label .label-text{
+        font-size: 1rem;
+    }
+    .order-details .det p{
+        font-size: 1rem;
+    }
+    .payment-options label{
+        font-size: 0.7875rem;
+    }   
+    .payment-options p{
+        font-size: 0.6125rem;
+    }
+    .order-summary button{
+        font-size: 0.7rem;
+    } 
+}

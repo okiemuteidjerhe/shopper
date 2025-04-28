@@ -5,32 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/cart.css">
 </head>
 
 <body>
     <header>
-        <button><img src="./icons/menu.png"></button>
+        <button><img src="./icons/menu.svg"></button>
         <nav>
             <div class="logo">
-                <img src="./icons/logo.png">
+                <img src="./icons/logo.svg">
             </div>
-            <ul class="main-menu ">
+            <ul class="main-menu">
                 <li><a href="">Shop</a></li>
                 <li><a href="">On Sale</a></li>
                 <li><a href="">New Arrivals</a></li>
             </ul>
             <div class="cart-container">
-                <a href="cart.html"><img src="./icons/cart.png"></a>
-                <a href=""><img src="./icons/avatar.png"></a>
+                <a href="cart.html"><img src="./icons/cart.svg"></a>
+                <a href=""><img src="./icons/avatar.svg"></a>
             </div>
         </nav>
     </header>
 
     <main>
         <div class="mini-nav">
-            <a href="">Home</a>
-            <img src="./icons/caret.png">
-            <a href="">Cart</a>
+            <a href="index.html">Home</a>
+            <img src="./icons/caret.svg">
+            <a href="#" class="h">Cart</a>
         </div>
 
         <section>
@@ -49,17 +54,15 @@
                                     <p>Color: <span>Brown</span></p>
                                 </div>
                                 <button>
-                                    <img src="./icons/bin.png">
+                                    <img src="./icons/bin.svg">
                                 </button>
                             </div>
                             <div class="down">
                                 <p>$240</p>
                                 <div class="btns">
-                                    <button>
-                                        -
-                                    </button>
+                                    <button><img src="./icons/minus.svg" alt=""></button>
                                     <span>1</span>
-                                    <button>+</button>
+                                    <button><img src="./icons/plus.svg" alt=""></button>
                                 </div>
                             </div>
                         </div>
@@ -85,15 +88,15 @@
                             <p id="total">$467</p>
                         </div>
                     </div>
-                    <form>
+                    <form class="coupon">
                         <div>
-                            <img src="./icons/coupon.png">
-                            <input type="text" placeholder="Apply promo code">
+                            <img src="./icons/coupon.svg">
+                            <input id="coupon-code" type="text" placeholder="Add promo code">
                         </div>
                         <button>Apply</button>
                     </form>
 
-                    <a href="">Go to Checkout <img src="./icons/white-arrow.png"></a>    
+                    <a href="checkout.html">Go to Checkout <img src="./icons/white-arrow.svg"></a>    
                 </div>
             </div>
         </section>
@@ -101,11 +104,11 @@
 
     <footer>
         <div class="cta">
-            <h1>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+            <h1>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h1>
             <form>
                 <div class="input">
-                    <img src="./icons/envelop.png">
-                    <input type="email" placeholder="Enter your email address">
+                    <img src="./icons/envelop.svg">
+                    <input id="cta" type="email" placeholder="Enter your email address">
                 </div>
                 <button>Subscribe to Newsletter</button>
             </form>
@@ -114,14 +117,14 @@
             <div class="main-footer-up">
                 <div class="footer-logo">
                     <div class="logo">
-                        <img src="./icons/logo.png">
+                        <img src="./icons/logo.svg">
                     </div>
                     <p>We have shoes that suits your style and which you’re proud to wear. From women to men.</p>
                     <div class="sm-icons">
-                        <a href=""><img src="./icons/twitter-logo.png" alt="Twitter logo"></a>
-                        <a href=""><img src="./icons/facebook-logo.png" alt="Facebook logo"></a>
-                        <a href=""><img src="./icons/instagram-logo.png" alt="Instagram logo"></a>
-                        <a href=""><img src="./icons/github-logo.png" alt="Github logo"></a>
+                        <a href=""><img src="./icons/twitter-logo.svg" alt="Twitter logo"></a>
+                        <a href=""><img src="./icons/facebook-logo.svg" alt="Facebook logo"></a>
+                        <a href=""><img src="./icons/instagram-logo.svg" alt="Instagram logo"></a>
+                        <a href=""><img src="./icons/github-logo.svg" alt="Github logo"></a>
                     </div>
                 </div>
                 <div class="footer-texts">
@@ -161,11 +164,11 @@
             <div class="main-footer-down">
                 <p>Shopper © 2024, All Rights Reserved</p>
                 <div class="gateways">
-                    <a href=""><img src="./icons/Visa.png" alt=""></a>
-                    <a href=""><img src="./icons/Mastercard.png" alt=""></a>
-                    <a href=""><img src="./icons/Paypal.png" alt=""></a>
-                    <a href=""><img src="./icons/ Pay.png" alt=""></a>
-                    <a href=""><img src="./icons/G Pay.png" alt=""></a>
+                    <a href=""><img src="./icons/Visa.svg" alt=""></a>
+                    <a href=""><img src="./icons/Mastercard.svg" alt=""></a>
+                    <a href=""><img src="./icons/Paypal.svg" alt=""></a>
+                    <a href=""><img src="./icons/ Pay.svg" alt=""></a>
+                    <a href=""><img src="./icons/G Pay.svg" alt=""></a>
                 </div>
             </div>
         </div>

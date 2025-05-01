@@ -28,11 +28,19 @@
     color: #00000099;
 }
 
-.hero-texts button {
+.hero-texts a {
     width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-texts button:hover {
+.hero-texts a:hover {
     background-color: var(--primary-color);
     color: white;
 }

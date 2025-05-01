@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/cart.css">
+    <script src="js/cart.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +26,10 @@
                 <li><a href="">New Arrivals</a></li>
             </ul>
             <div class="cart-container">
-                <a href="cart.html"><img src="./icons/cart.svg"></a>
+                <div class="cart-icon">
+                    <a href="cart.html"><img src="./icons/cart.svg"></a>
+                    <span class="total-qty">0</span>
+                </div>
                 <a href=""><img src="./icons/avatar.svg"></a>
             </div>
         </nav>
@@ -67,6 +71,31 @@
                             </div>
                         </div>
                     </div>
+                    <div class="item-card">
+                        <div class="item-img">
+                            <img src="./images/brown-sneakers.png" alt="Brown sneakers">
+                        </div>
+                        <div class="item-texts">
+                            <div class="up">
+                                <div class="up-texts">
+                                    <h2>Brown Sneakers</h2>
+                                    <p>Size: <span>Large</span></p>
+                                    <p>Color: <span>Brown</span></p>
+                                </div>
+                                <button>
+                                    <img src="./icons/bin.svg">
+                                </button>
+                            </div>
+                            <div class="down">
+                                <p>$240</p>
+                                <div class="btns">
+                                    <button><img src="./icons/minus.svg" alt=""></button>
+                                    <span>1</span>
+                                    <button><img src="./icons/plus.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="order-summary">
                     <h2>Order Summary</h2>
@@ -75,13 +104,13 @@
                             <p>Subtotal</p>
                             <p id="subtotal">$565</p>
                         </div>
-                        <div class="det">
-                            <p>Discount <span>(-20%)</span></p>
+                        <div class="det" id="d">
+                            <p id="d">Discount <span>(-20%)</span></p>
                             <p id="discount">-$133</p>
                         </div>
                         <div class="det">
                             <p>Delivery Fee</p>
-                            <p>$15</p>
+                            <p id="delivery-fee">$15</p>
                         </div>
                         <div class="det">
                             <p>Total</p>

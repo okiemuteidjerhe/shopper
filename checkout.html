@@ -7,6 +7,7 @@
     <title>Check out</title>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/checkout.css">
+    <script src="js/checkout.js" defer></script>
 </head>
 
 <body>
@@ -22,7 +23,10 @@
                 <li><a href="">New Arrivals</a></li>
             </ul>
             <div class="cart-container">
-                <a href="cart.html"><img src="./icons/cart.svg"></a>
+                <div class="cart-icon">
+                    <a href="cart.html"><img src="./icons/cart.svg"></a>
+                    <span class="total-qty">0</span>
+                </div>
                 <a href=""><img src="./icons/avatar.svg"></a>
             </div>
         </nav>
@@ -45,16 +49,28 @@
                         Billing Details
                     </h2>
                     <div class="fullname">
-                        <input type="text" name="firstName" id="" placeholder="First Name">
-                        <input type="text" name="lastName" id="" placeholder="Last Name">
+                        <input type="text" name="firstName" id="" placeholder="First Name" required>
+                        <input type="text" name="lastName" id="" placeholder="Last Name" required>
                     </div>
                     <input type="text" name="companyName" id="" placeholder="Company Name">
-                    <input type="text" name="country" id="" placeholder="Country">
-                    <input type="text" name="streetAddress" id="" placeholder="Stress Address">
-                    <input type="text" name="postalCode" id="" placeholder="Post code/Zip">
-                    <input type="text" name="town" id="" placeholder="Town/City">
-                    <input type="text" name="phone" id="" placeholder="Phone">
-                    <input type="email" name="email" id="" placeholder="Email">
+                    <div class="ctn">
+                        <input type="text" name="country" id="" placeholder="Country" required>
+                    </div>
+                    <div class="ctn">
+                        <input type="text" name="streetAddress" id="" placeholder="Street Address" required>
+                    </div>
+                    <div class="ctn">
+                        <input type="text" name="postalCode" id="" placeholder="Post code/Zip" required>
+                    </div>
+                    <div class="ctn">
+                        <input type="text" name="town" id="" placeholder="Town/City" required>
+                    </div>
+                    <div class="ctn">
+                        <input type="text" name="phone" id="" placeholder="Phone" required>
+                    </div>
+                    <div class="ctn">
+                        <input type="email" name="email" id="" placeholder="Email" required>
+                    </div>
                     <label>
                         <input type="checkbox" name="createAccount">
                         <span class="label-text">Create an account?</span>
@@ -75,25 +91,27 @@
                             <p>PRODUCT</p>
                             <p>TOTAL</p>
                         </div>
-                        <div class="det">
-                            <p>Brown Sneakers</p>
-                            <p>$240</p>
-                        </div>
-                        <div class="det">
-                            <p>Red Shoes</p>
-                            <p>$180</p>
-                        </div>
-                        <div class="det">
-                            <p>Orange white sneakers</p>
-                            <p>$130</p>
-                        </div>
-                        <div class="det">
+                        <div class="items">
+                            <div class="det">
+                                <p>Brown Sneakers</p>
+                                <p>$240</p>
+                            </div>
+                            <div class="det">
+                                <p>Red Shoes</p>
+                                <p>$180</p>
+                            </div>
+                            <div class="det">
+                                <p>Orange white sneakers</p>
+                                <p>$130</p>
+                            </div>
+                        </div>    
+                        <div class="det" id="d-ctn">
                             <p>Discount <span>(-20%)</span></p>
                             <p id="discount">-$133</p>
                         </div>
                         <div class="det">
                             <p>Shipping</p>
-                            <p>Free Shipping</p>
+                            <p id="delivery-fee">Free Shipping</p>
                         </div>
                         <div class="det">
                             <p>Total</p>
@@ -101,11 +119,11 @@
                         </div>
                     </div>
                    <div class="payment-options">
-                    <label><input type="radio" name="payment">Direct bank transfer</label>
+                    <label><input type="radio" name="payment" value="Direct bank transfer">Direct bank transfer</label>
                     <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
-                    <label><input type="radio" name="payment">Check payments</label>
-                    <label><input type="radio" name="payment">Cash on delivery</label>
-                    <label><input type="radio" name="payment">
+                    <label><input type="radio" name="payment" value="Cheque payments">Cheque payments</label>
+                    <label><input type="radio" name="payment" value="Cash on delivery">Cash on delivery</label>
+                    <label><input type="radio" name="payment" value="PayPal">
                         <span class="label-content">PayPal <img src="./icons/paypal-logo.svg"></span>
                     </label>
                    </div>                

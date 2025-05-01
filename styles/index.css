@@ -97,7 +97,21 @@ nav {
     align-items: center;
     gap: 14px;
 }
-
+.cart-icon{
+    position: relative;
+}
+.total-qty{
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    background-color: var(--secondary-color);
+    min-width: 20px;
+    min-height: 20px;
+    padding: 1px 2px;
+    border-radius: 50px;
+    display: grid;
+    place-content: center;
+}
 footer {
     display: grid;
     gap: 50px;

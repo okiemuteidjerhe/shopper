@@ -51,11 +51,40 @@ section h1{
 .fullname{
     display: flex;
     gap: 12px;
+    position: relative;
+}
+.fullname::before{
+    content: "*";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: -10px;
+}
+.fullname::after{
+    content: "*";
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 50%;
 }
 .billing-details input{
     padding: 12px 0;
     border-bottom: 1px solid #4841411a ;
     font-size: 1.25rem;
+}
+.billing-details .ctn input{
+    width: 100%;
+}
+.billing-details .ctn{
+    position: relative;
+}
+.billing-details .ctn::before{
+    content: "*";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    font-weight: 700;
 }
 .billing-details label{
     display: inline-flex;
@@ -106,6 +135,10 @@ section h1{
     display: grid;
     gap: 20px;
 }
+.order-details .items{
+    display: grid;
+    gap: 20px;
+}
 .order-details .det{
     display: flex;
     justify-content: space-between;
@@ -119,6 +152,9 @@ section h1{
     opacity: 80%;
 }
 .order-details .det:not(:nth-of-type(6), :nth-of-type(1)) p:nth-of-type(2) {
+    font-weight: 700;
+}
+.order-details .items .det:first-of-type p:nth-of-type(2){
     font-weight: 700;
 }
 #discount{
@@ -189,7 +225,7 @@ section h1{
     .billing-details h2, .order-details h2{
         font-size: 1.2rem;
     }
-    .billing-details input, .billing-details label .label-text{
+    .billing-details input, .billing-details label .label-text, .billing-details textarea{
         font-size: 1rem;
     }
     .order-details .det p{

@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/home.css">
+    <script src="js/data.js" defer></script>
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +27,10 @@
                 <li><a href="">New Arrivals</a></li>
             </ul>
             <div class="cart-container">
-                <a href="cart.html"><img src="./icons/cart.svg"></a>
+                <div class="cart-icon">
+                    <a href="cart.html"><img src="./icons/cart.svg"></a>
+                    <span class="total-qty">0</span>
+                </div>
                 <a href=""><img src="./icons/avatar.svg"></a>
             </div>
         </nav>
@@ -54,6 +59,7 @@
                     <div class="product-img">
                         <img src="./images/beige-shoes.png">
                         <button><img src="./icons/cart.svg"></button>
+                        <span class="qty">0</span>
                     </div>
                     <div class="product-texts">
                         <h3>Beige Shoes</h3>
@@ -61,7 +67,11 @@
                             <span>Rating</span>
                             <span>4.5/5</span>
                         </div>
-                        <h2>$120</h2>
+                        <div class="price-container">
+                            <h2 class="price">$120</h2>
+                            <h2 class="dp">$232</h2>
+                            <p class="discount">-20%</p>
+                        </div>
                     </div>
                 </div>
 

@@ -222,6 +222,10 @@ section h1{
     .fullname{
         flex-direction: column;
     }
+    .fullname::after{
+        top: 50%;
+        left: -10px;
+    }
     .billing-details h2, .order-details h2{
         font-size: 1.2rem;
     }
